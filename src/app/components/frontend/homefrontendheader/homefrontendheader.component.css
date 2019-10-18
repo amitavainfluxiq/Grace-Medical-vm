@@ -1,0 +1,62 @@
+.clear{ display: block!important; clear: both; overflow: hidden;}
+
+.ami_top1{ display: block!important; margin: 0!important; padding: 0!important; border: none!important; background: #1c73ca!important; border-radius: 0px!important; box-shadow: none!important;}
+
+.ami_top2{ display: block!important; margin: 0!important; padding: 0!important; border: none!important; background: #064785!important; border-radius: 0px!important; box-shadow: none!important; text-align: center;}
+
+.ami_top2 button{ display: inline-block; font-size: 14px; color: #ffffff; padding: 10px 20px!important; border-radius: 0px!important;}
+
+.ami_top2 button:hover{ border-bottom: solid 4px #2191e8; padding: 10px 20px 6px 20px!important;}
+.ami_top2 button .active{ border-bottom: solid 4px #2191e8; padding: 10px 20px 6px 20px!important;}
+
+.ami_top1_wrapper{ width: 1600px; margin: 0 auto;}
+
+.ami_top1_wrapper .ami_top_logo{ display: block; width: 254px; margin: 11px 0 10px 0; float: left; outline: none!important;}
+
+.ami_top1_wrapper .ami_top_logo img{ width: 100%;}
+
+.ami_top1_wrapper  .ami_top_menu{ display: inline-block; float: right;}
+
+.ami_top1_wrapper  .ami_top_menu .ami_top_search{ display: block; float: right; width: 280px; margin: 14px 0; background: #fff; padding: 1px;}
+
+
+.ami_top_search .mat-input-element{ width: 206px; float: left; border: none; height: 37px; border: none; padding: 0 5px; box-shadow: none!important; outline: none!important;}
+
+.ami_top_search button{ width: 33px; float: right; background: #1c73ca; padding: 0px!important; border-radius: 0px; color: #fff;}
+
+.amitoplogin{ font-size: 14px; color: #ffffff; margin: 16px 10px 0 0;}
+
+.amitoplogin:hover{ color: #fff600;}
+
+ .amitoploginmenu{ height: auto!important; line-height: 35px!important; color: #333;}
+
+.amitoploginmenu:hover{color: #1c73ca;}
+
+.share_this_all{ position: fixed; left: 0; top: 170px; z-index: 99;}
+
+
+@media(max-width:1640px) {
+
+    .ami_top1_wrapper{ width: 80%; margin: 0 auto;}
+
+}
+
+
+@media(max-width:800px) {
+    .ami_top1_wrapper{ width: 90%; margin: 0 auto; padding-bottom: 10px;}
+
+
+    .ami_top1_wrapper .ami_top_logo{ display: block; width: auto; margin: 0px auto; float: none; clear: both; overflow: hidden;}
+
+    .ami_top1_wrapper .ami_top_logo img{ display: block; margin: 10px auto; width: auto; max-width: 100%;}
+
+    .ami_top1_wrapper  .ami_top_menu{ display: block; float: none; margin: 0 auto; width:auto;}
+
+    .ami_top1_wrapper  .ami_top_menu .ami_top_search{ float: none; margin: 10px auto;  clear: both; overflow: hidden;}
+
+    .amitoplogin{   margin: 0 auto; display: block; width: 100px; text-align: center;}
+}
+
+@media(max-width:991px) {
+    .ami_top2 button{ line-height: 25px!important;}
+}

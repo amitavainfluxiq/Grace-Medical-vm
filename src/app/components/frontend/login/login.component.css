@@ -1,0 +1,17 @@
+.loginBg{
+    background: url("/assets/images/background.jpg") no-repeat;
+    background-position: center center; background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+.image_wrapper{ position: relative;}
+.image_wrapper button{
+    position: absolute;
+    bottom: 58px;
+    width: 91%;
+    left: 23px;
+    background: transparent;
+    text-align: center;
+    padding: 10px; color: transparent;
+}

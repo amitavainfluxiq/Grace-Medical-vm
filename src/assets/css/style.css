@@ -1,0 +1,25 @@
+ .images{ display: block; position: relative; }
+ .images img{ max-width: 100%; }
+
+ .tab_pannel{ width: 165px;  
+    position: fixed;
+    right: 0;
+    top: 20%;
+    display: block;
+    background: #1bdcff;
+    box-shadow: -1px 1px 7px 2px #4a3131;}
+
+    .tab_pannel .mat-list-base{padding: 0;}
+    .tab_pannel .mat-list-base .mat-list-item,
+    .tab_pannel .mat-list-base .mat-list-option {
+        display: block;
+        height: 48px;
+        -webkit-tap-highlight-color: transparent;
+        width: 100%;
+        padding: 0;
+        background: #01b2d3;
+        margin: 5px 0;
+        color: #fff;
+    }
+
+    .images .tapi{ background: red;}

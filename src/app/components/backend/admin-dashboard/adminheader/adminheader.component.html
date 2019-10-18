@@ -1,0 +1,107 @@
+<mat-toolbar class="techdashboard_header">
+
+    <span class="logo_wrapper" routerLink="/admin_dashboard">
+        <img src="/assets/images/logo.png" alt="">
+      <!--  <button mat-flat-button><i class="material-icons"> menu </i></button>-->
+    </span>
+
+<!--    <button mat-flat-button id="menu_button" (click)="myFunction()"><i class="material-icons"> menu </i></button>-->
+    <mat-card-content class="quotation" >
+
+        <button mat-button  routerLink="/home"><i class="material-icons">
+            home
+        </i></button>
+
+        <button mat-button  routerLink="/admin_dashboard">Dashboard</button>
+
+        <button mat-button [matMenuTriggerFor]="menu">User Management <i class="material-icons">
+            keyboard_arrow_down
+        </i></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/admin_doctors">Doctors</button>
+            <button mat-menu-item routerLink="/admin_patients">Patients</button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="menu2">Training Manager <i class="material-icons">
+            keyboard_arrow_down
+        </i></button>
+        <mat-menu #menu2="matMenu">
+            <button mat-menu-item routerLink="/manage_category">Manage Category</button>
+            <button mat-menu-item routerLink="/manage_lesson">Manage Lesson</button>
+            <button mat-menu-item routerLink="/training_center">Training Center</button>
+            <button mat-menu-item routerLink="/training_report"> Training Report</button>
+        </mat-menu>
+
+
+        <button mat-button routerLink="/admin_appointments">Appointments</button>
+
+
+        <button mat-button [matMenuTriggerFor]="menu3">Manage Website <i class="material-icons">
+            keyboard_arrow_down
+        </i></button>
+        <mat-menu #menu3="matMenu">
+            <button mat-menu-item routerLink="/admin_social_advo"> Social Advo</button>
+                <button mat-menu-item routerLink="/admin_article_manager"> Article Manager</button>
+                    <button mat-menu-item routerLink="/admin_testimonial"> Testimonial</button>
+                        <button mat-menu-item routerLink="/admin_newsletter"> Newsletter</button>
+                            <button mat-menu-item routerLink="/admin_gallery_manager"> Gallery Manager</button>
+        </mat-menu>
+
+
+    </mat-card-content>
+
+
+
+    <mat-card-content class="profile_section">
+        <mat-menu #appMenu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>account_circle</mat-icon> Account
+            </button>
+            <button mat-menu-item>
+                <mat-icon>build</mat-icon> Settings
+            </button>
+            <button mat-menu-item>
+                <mat-icon>edit</mat-icon> Edit Profile
+            </button>
+
+            <button mat-menu-item routerLink="/home">
+                <mat-icon>
+                    lock</mat-icon>Logout
+            </button>
+        </mat-menu>
+        <span class="username">John Doe</span>
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+            <span class="user_profile">
+                <mat-icon>account_circle</mat-icon>
+                <i class="material-icons">
+                    keyboard_arrow_down
+                </i>
+            </span>
+        </button>
+
+    </mat-card-content>
+
+</mat-toolbar>
+
+
+
+<div class="inner_wrapper">
+    <div class="leftpannel">
+
+        <button mat-button  routerLink="/admin_dashboard">  <img src="/assets/images/admin_left_menu1.png" alt=""></button>
+        <button mat-button routerLink="/admin_doctors">  <img src="/assets/images/admin_left_menu2.png" alt=""></button>
+        <button mat-button routerLink="/manage_category">  <img src="/assets/images/admin_left_menu3.png" alt=""></button>
+        <button mat-button routerLink="/admin_appointments">  <img src="/assets/images/admin_left_menu4.png" alt=""></button>
+        <button mat-button routerLink="/admin_social_advo">  <img src="/assets/images/admin_left_menu5.png" alt=""></button>
+    </div>
+    <div class="rightpannel">
+        <ng-content></ng-content>
+
+    </div>
+</div>
+
+
+
+
+<!-- end header -->
