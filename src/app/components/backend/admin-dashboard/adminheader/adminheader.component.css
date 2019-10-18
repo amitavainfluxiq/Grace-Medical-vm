@@ -1,5 +1,23 @@
 /* header css */
 
+.leftsidemenuhoverbg{ position: absolute; left: 68px; top: 4px; display: none;}
+.leftpannelspan{ display: block; position: relative;}
+
+.menuleftblock {
+      position: absolute; left: 77px; top: 0px; z-index: 99;  display: block; display: none;  width: 150px; text-align: left; border: solid 2px #fff;
+}
+
+
+.leftpannelspan:hover .leftsidemenuhoverbg{ display: block;}
+
+.leftpannelspan:hover .menuleftblock{ display: block;}
+
+.leftpannel .menuleftblock button{ margin: 0!important; padding: 0!important; height: auto!important; line-height: inherit!important; color: #fff; padding: 10px 15px!important; background: #33333b; text-align: left!important;}
+
+.leftpannel .menuleftblock button:last-child{ border-bottom: none!important;}
+
+.leftpannel .menuleftblock button:hover{ background: #1b73ca}
+
 .techdashboard_header .logo_wrapper{ max-width: 200px; display: block; cursor: pointer; padding: 10px;}
 
 .techdashboard_header .logo_wrapper:focus{ outline: none; border: none; }
@@ -20,6 +38,9 @@
 
 .techdashboard_header button{ font-size:16px; color: #fff; font-weight: normal;}
 
+.techdashboard_header button:hover{ color: #c0d84b;}
+ .activetop{ color: #c0d84b!important;}
+
 
 
 
@@ -31,10 +52,13 @@
 .inner_wrapper .leftpannel .mat-nav-list .mat-list-item:nth-child(1){ border-top: 0px; }
 .inner_wrapper .rightpannel{ width: 100%; box-sizing: border-box; position: relative;  }
 
-.leftpannel  button{ display: block; text-align: center; padding: 15px 2px!important; border-bottom: solid 1px #66666e; border-radius: 0px; margin: 0px!important; width: 100%;}
+.leftpannel  button{ display: block; text-align: center; padding: 15px 2px!important; border-bottom: solid 1px #716f6f; border-radius: 0px; margin: 0px!important; width: 100%;}
 
 .leftpannel  button:hover{ background: #064785;}
-.leftpannel  button .active{ background: #064785;}
+.leftpannel   .active{ background: #064785;}
+
+
+
 
 
 @media(max-width:1260px) {

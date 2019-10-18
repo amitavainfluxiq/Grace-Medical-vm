@@ -7,7 +7,7 @@
 .ami_top2 button{ display: inline-block; font-size: 14px; color: #ffffff; padding: 10px 20px!important; border-radius: 0px!important;}
 
 .ami_top2 button:hover{ border-bottom: solid 4px #2191e8; padding: 10px 20px 6px 20px!important;}
-.ami_top2 button .active{ border-bottom: solid 4px #2191e8; padding: 10px 20px 6px 20px!important;}
+.ami_top2  .active{ border-bottom: solid 4px #2191e8; padding: 10px 20px 6px 20px!important;}
 
 .ami_top1_wrapper{ width: 1600px; margin: 0 auto;}
 
